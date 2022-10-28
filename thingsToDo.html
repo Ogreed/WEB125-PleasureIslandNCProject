@@ -1,0 +1,116 @@
+<!--Name: Olivia Reed
+    Class: WEB 125.0001
+    Lesson Nine Assignment -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/styles.css">
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!--Link to Web Font-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> 
+
+            <title>Explore Pleasure Island, North Carolina</title>
+    
+            <style>
+                body {
+                    background-image: url('images/utsman-media-Pl2rO-RrAsw-unsplash.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed; 
+                }
+            </style>
+            <script>
+                /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+        </head>
+
+        <body>
+            <div id="big-nav">
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <div class="navGrid">
+                        <a href="index.html" class="active" id="logo"><img src="images/logo.png" alt=""></a> 
+                        <!-- Navigation links (hidden by default) -->
+                        <div id="myLinks">
+                            <a href="map.html">Map</a>
+                            <a href="history.html">History</a>
+                            <a href="thingsToDo.html">Things To Do</a>
+                            <a href="planYourTrip.html">Plan Your Trip</a>
+                            <a href="index.html">Home</a>
+                        </div>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+
+            <main>
+                <br>
+                <h1>Things to do in Pleasure Island</h1>
+                <br>
+                <br>
+                <br>
+                <div class="gallery">
+                    <figure class="gallery__item gallery__item--1">
+                      <img src="images/thingsToDo/pexels-anna-tarazevich-6370070.jpg" class="gallery__img" alt="woman putt putt golfing">
+                      <figcaption>Best places to go putt putt golfing</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--2">
+                      <img src="images/thingsToDo/pexels-ashish-sharma-904089.jpg" class="gallery__img" alt="Fresh breakfast food containing eggs, toast, beans, two smoothies, and a bowl of fruit.">
+                      <figcaption>Find fresh breakfast foods</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--3">
+                      <img src="images/thingsToDo/pexels-bruno-cantuaria-774455.jpg" class="gallery__img" alt="wine bottles stored in their wooden racks">
+                      <figcaption>Find fine wineries</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--4">
+                      <img src="images/thingsToDo/pexels-gapeppy-2373201.jpg" class="gallery__img" alt="Line of padded reclining wooden pool chairs">
+                      <figcaption>Relax at our nicest spas</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--5">
+                      <img src="images/thingsToDo/pexels-midia-1089313.jpg" class="gallery__img" alt="man fishing on the beach">
+                      <figcaption>Find the best on beach fishing locations</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--6">
+                        <img src="images/thingsToDo/pexels-pablo-gutierrez-3690705.jpg" class="gallery__img" alt="fishing gear">
+                        <figcaption>Fishing rentals</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--7">
+                        <img src="images/thingsToDo/pexels-surawitch-atsaradorn-1368043.jpg" class="gallery__img" alt="pineaple filled with smoothie sitting on the beach">
+                        <figcaption>Refreshing beverage locations</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--8">
+                        <img src="images/thingsToDo/pexels-terje-sollie-566345.jpg" class="gallery__img" alt="plate full of fresh seafood">
+                        <figcaption>Top dinner recommendations</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--9">
+                        <img src="images/thingsToDo/pexels-thomas-ward-2828723.jpg" class="gallery__img" alt="golf ball sitting on golf green">
+                        <figcaption>Best locations to go golfing</figcaption>
+                    </figure>
+                  </div>
+
+            </main>
+            <footer>
+                <div class="contact" id="contact">
+                <a href="https://web.archive.org/web/20201226115136/https://twitter.com/pleasureisland" target="_blank"><img src="images/2021-Twitter-logo---black.png" alt="black Twitter logo"></a>
+                <a href="https://web.archive.org/web/20211203120929/https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FPleasureIslandNC"><img src="images/f_logo_RGB-Black_72.png" alt="black facebook logo"></a>
+                </div>
+            </footer>
+        </body>
+    </html>

@@ -1,0 +1,85 @@
+<!--Name: Olivia Reed
+    Class: WEB 125.0001
+    Lesson Nine Assignment -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/styles.css">
+            <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!--Link to Web Font-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> 
+        
+            <title>Explore Pleasure Island, North Carolina</title>
+    
+            <style>
+                body {
+                    background-image: url('images/utsman-media-Pl2rO-RrAsw-unsplash.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed; 
+                }
+                main {
+                    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+                }
+            </style>
+
+            <script>
+                    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </head>
+
+        <body>
+            <div id="big-nav">
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <div class="navGrid">
+                        <a href="index.html" class="active" id="logo"><img src="images/logo.png" alt=""></a> 
+                        <!-- Navigation links (hidden by default) -->
+                        <div id="myLinks">
+                            <a href="map.html">Map</a>
+                            <a href="history.html">History</a>
+                            <a href="thingsToDo.html">Things To Do</a>
+                            <a href="planYourTrip.html">Plan Your Trip</a>
+                            <a href="index.html">Home</a>
+                        </div>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+
+            <main>
+                <br>
+                <br>
+                <h1>Pleasure and relaxation are just a click away...find your best route today!</h1>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105846.6100356285!2d-77.90974895000001!3d34.000070150000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9f8bf1e6ff81b%3A0x5e5ec0a8f80131cc!2sPleasure%20Island!5e0!3m2!1sen!2sus!4v1666916339900!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </main>
+
+            <footer>
+                <div class="contact" id="contact">
+                <a href="https://web.archive.org/web/20201226115136/https://twitter.com/pleasureisland" target="_blank"><img src="images/2021-Twitter-logo---black.png" alt="black Twitter logo"></a>
+                <a href="https://web.archive.org/web/20211203120929/https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FPleasureIslandNC"><img src="images/f_logo_RGB-Black_72.png" alt="black facebook logo"></a>
+                </div>
+            </footer>
+        </body>
+    </html>
